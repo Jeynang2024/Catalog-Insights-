@@ -59,17 +59,17 @@ We experimented with multiple approaches:
 1. **Random Forest Regressor**
    - Trained on TF-IDF embeddings of combined text.  
    - Trained again using TF-IDF embeddings of separate columns for better efficiency.
-*![Example Image 1](image1.png)*  
+*![Example Image 1](images/random.png)*  
 
 2. **LightGBM + BERT**
    - Used BERT embeddings of combined text + numeric features.  
    - Dimensionality reduction using PCA was applied to speed up training.
-*![Example Image 1](image2.png)*   
+*![Example Image 1](images/lightgbm.png)*   
 
 3. **LightGBM + BERT**
    - BERT embeddings reduced with PCA and combined with numeric features.  
    - LightGBM was used for faster training and higher efficiency.
-*![Example Image 1](image3.png)*  
+*![Example Image 1](images/bert.png)*  
 
 **Evaluation Metric:**  
 - RMSE (Root Mean Squared Error) was used to evaluate model performance.
